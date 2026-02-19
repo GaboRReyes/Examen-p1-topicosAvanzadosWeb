@@ -1,4 +1,10 @@
 <?php
+
+require_once __DIR__ . '/controllers/urlController.php';
+
+class Router {
+
+    public static function handle() {
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $method = $_SERVER['REQUEST_METHOD'];
 
@@ -16,4 +22,7 @@ elseif ($method === 'GET' && preg_match('#^/api/v1/urls/([a-zA-Z0-9]+)/stats$#',
 else {
     http_response_code(404);
     echo json_encode(["error" => "Route not found"]);
+}
+
+    }
 }
