@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/controllers/UrlController.php';
+require_once __DIR__ . '/controllers/urlController.php';
 
 class Router {
 

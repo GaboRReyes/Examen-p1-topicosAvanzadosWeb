@@ -5,12 +5,12 @@ error_reporting(E_ALL);
 
 header("Content-Type: application/json");
 
-require_once __DIR__ . '/../app/Router.php';
+require_once __DIR__ . '/../app/router.php';
 
 Router::handle();
 
 header("Content-Type: application/json");
 
-require_once __DIR__ . '/../app/Router.php';
+require_once __DIR__ . '/../app/router.php';
 
 Router::handle();
