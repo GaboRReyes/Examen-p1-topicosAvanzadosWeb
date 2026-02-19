@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../database.php';
-require_once __DIR__ . '/../services/urlService.php';
+require_once __DIR__ . '/../services/urlServices.php';
 
 class UrlController {
 
